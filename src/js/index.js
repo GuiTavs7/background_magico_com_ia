@@ -25,7 +25,7 @@ form.addEventListener("submit", async function(event){
     mostrarCarregamento(true);
 
     try {
-        const resposta = await fetch("https://guitavs7.app.n8n.cloud/webhook-test/fundo-magico", {
+        const resposta = await fetch("https://guitavs7.app.n8n.cloud/webhook/fundo-magico", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
