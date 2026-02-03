@@ -1,14 +1,22 @@
+// 1) Mensagem de boas-vindas ao usuário
+
 window.alert("Olá! Bem-vindo ao meu projeto de fundo mágico com IA!");
+
+// 2) Log no console quando o conteúdo da página for totalmente carregado
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("O conteúdo da página foi totalmente carregado e analisado.");
 });
+
+// 3) Variáveis e seleção de elementos do DOM
 
 const form = document.querySelector(".form-group");
 const descricaoInput = document.getElementById("description");
 const codigoHtml = document.getElementById("html-code");
 const codigoCss = document.getElementById("css-code");
 const secaoPreview = document.getElementById("preview-section");
+
+// 4) Manipulação do evento de envio do formulário - principal funcionalidade
 
 form.addEventListener("submit", async function(event){
     event.preventDefault(); // Impede o envio padrão do formulário
@@ -70,6 +78,8 @@ form.addEventListener("submit", async function(event){
         mostrarCarregamento(false);
     }
 });
+
+// 5) Função para mostrar o estado de carregamento no botão
 
 function mostrarCarregamento(estaCarregando) {
 
